@@ -10,6 +10,7 @@ import {
 } from "firebase/firestore";
 
 export default function App() {
+  console.log("Firebase app:", auth.app.name);
   const [user, setUser] = useState(null);
   const [cards, setCards] = useState([]);
   const [ownership, setOwnership] = useState({});
